@@ -1,0 +1,35 @@
+body{
+    background:#62374A;
+}
+.a1{
+    background-color:#FDC57B;
+    height:50px;
+    width: 50px;
+    left: 100px;
+    top:250px;  
+    position: absolute;
+    }
+    .a2{
+    background-color:#FDC57B;
+    height:50px;
+    width: 50px;
+    left: 100px;
+    top:100px;  
+    position: absolute;
+    }
+    .a3{
+    background-color:#FDC57B;
+    height:50px;
+    width: 50px;
+    left: 400px;
+    top:250px;  
+    position: absolute;
+    }
+    .a4{
+        background-color:#FDC57B;
+        height:50px;
+        width: 50px;
+        left: 400px;
+        top:100px;  
+        position: absolute;
+        }

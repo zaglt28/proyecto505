@@ -1,0 +1,30 @@
+body{
+    background:#62306D ;
+}
+.a1{
+background-color:#f7ec7d;
+height:150px;
+width: 150px;
+border-radius: 0% 0% 100% 100%;  
+left: 100px;
+top:250px;  
+position: absolute;
+}
+.a2{
+background-color:#f7ec7d;
+height:150px;
+width: 150px;
+border-radius: 100% 100% 0% 0%;  
+left: 250px;
+top:100px;  
+position: absolute;
+}
+.a3{
+background-color:#f7ec7d;
+height:150px;
+width: 150px;
+border-radius: 0% 0% 100% 100%;  
+left: 400px;
+top:250px;  
+position: absolute;
+}

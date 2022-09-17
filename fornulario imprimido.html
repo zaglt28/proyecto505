@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formulario 2</title>
+</head>
+
+<body bgcolor="lightblue">
+	<table border="2">
+	<f action="">
+<h1>Formulario 2</h1>
+<h3>Agregar fotografía digital</h3><input type="file" required id="foto"><br>
+<h3>Folio comipems</h3>
+<input type="text" class="u-full-width"   placeholder="Folio" required id="folio" /><br>
+<h3>Aciertos</h3>
+<input type="number" class="u-full-width"placeholder="Aciertos" required id="aciertos" /><br>
+<h3>Carrera</h3>
+<input type="text" class="u-full-width" placeholder="Carrera" id="carrera" required /><br>
+<h3>Fecha</h3>
+<input type="date" class="u-full-width"placeholder="Fecha" required id="fecha"/><br>
+<h3>Nombre</h3>
+<input type="text" class="u-full-width" placeholder="Nombre"required id="nombre"/><br>
+<h3>Apellido paterno</h3>
+<input type="text" class="u-full-width" placeholder="Apellido paterno"required id="apellido1"/><br>
+<h3>Apellido materno</h3>
+<input type="text" class="u-full-width" placeholder="Apellido materno" required id="apellido2"/><br>
+<h3>Fecha de nacimiento</h3>
+<input type="date" class="u-full-width" required placeholder="Fecha de nacimiento" id="fechan"/><br>
+<h3>Lugar de nacimiento </h3>
+<input type="text" class="u-full-width" placeholder="Lugar de nacimiento " required id="lugarn"/><br>
+<h3>CURP</h3>
+<input type="text" class="u-full-width" placeholder="CURP"required id="curp1" /><br>
+<h3>Sexo</h3> <select class="form-select form-select-sm" aria-label=".form-select-sm example" id="sexo"  required>
+                 <option selected>Sexo</option>
+                 <option value="1">Masculino</option>
+                 <option value="2">Femenino</option>
+                 
+               </select>
+
+<h3>Alergias</h3>
+<input type="text" class="u-full-width" placeholder="Alergias"required id="alergias"/><br>
+<h3>Teléfono aspirante</h3>
+<input type="tel" class="u-full-width" placeholder="Teléfono aspirante "required id="telefono1" /><br>
+<h3>Teléfono padres o tutor</h3>
+<input type="tel" class="u-full-width" placeholder="Teléfono padre o tutor"required id="telefono2"/><br>
+<h3>Email aspirante</h3>
+<input type="email" class="u-full-width" placeholder="Email aspirante"required id="email1"/><br>
+<h3>Email padres o tutor</h3>
+<input type="email" class="u-full-width"placeholder="Email padre o tutor"required id="email2"/><br>   
+<h3>Direccion</h3>
+<input type="tel" class="u-full-width"placeholder="Direccion"required id="dirrecion"/>
+<br>
+<h3>Calle</h3>
+<input type="text" class="u-full-width" placeholder="Calle"required id="calle"/><br>
+<h3>Numero</h3>
+<input type="text" class="u-full-width" placeholder="Numero"required id="numeroc"/><br>
+<h3>Colonia</h3>
+<input type="text" class="u-full-width"placeholder="Colonia" required id="colonia"/><br>
+<h3>Localidad</h3>
+<input type="text" class="u-full-width"placeholder="Localidad" required id="localidad"/><br>
+<h3>CP</h3>
+<input type="text" class="u-full-width" placeholder="CP"required id="cp"/><br>
+<h3>Municipio</h3>
+<input type="text" class="u-full-width" placeholder="Municipio"required id="municipio"/><br>
+<h3>Estado</h3>
+<input type="text" class="u-full-width" placeholder="Estado"required id="estado" /><br>
+
+<h3>Nombre escuela</h3>
+<input type="text" class="u-full-width"placeholder="Nombre escuela" required id="nombree"/><br>
+<h3>CCT</h3>
+<input type="text" class="u-full-width"placeholder="CCT" required id="cct"/><br>
+<h3>Promedio</h3>
+<input type="number " class="u-full-width" placeholder="Promedio"requicct id="promedio" /><br>
+<h3>Año ingreso</h3>
+<input type="number " class="u-full-width" placeholder="Año ingreso"required id="añoi" /><br>
+<h3>Año egreso</h3>
+<input type="number " class="u-full-width" placeholder="Año egreso " id="añoe"/><br>
+<h2>Datos tutor</h2>
+<h3>Nombre</h3>
+<input type="text" class="u-full-width"placeholder="Nombre " required id="nombret"/><br>
+<h3>Apellido paterno</h3>
+<input type="text" class="u-full-width" placeholder="Apellido paterno"required id="apellido3"/><br>
+<h3>Apellido materno</h3>
+<input type="text" class="u-full-width"placeholder="Apellido materno"required id="apellido4"/><br>
+<h3>CURP</h3>
+<input type="text" class="u-full-width"placeholder="CURP" required id="curp2"/><br>
+<h3>Último grado de estudio</h3>
+<input type="text" class="u-full-width" placeholder="Último grado de estudio "required id="ultimog"/><br><br><br>
+</table>
+
+<button type="submit" onclick="ver()" class="u-full-width button-primary">Imprimir</button>
+
+</form>
+<div id="imprimir">
+  
+</div>
+<script>
+var imprimir= document.querySelector("#imprimir");
+const ver = () => {
+
+  var foto = document.querySelector("#foto").value;
+  var folio = document.querySelector("#folio").value;
+  var aciertos = document.querySelector("#aciertos").value;
+  var carrera = document.querySelector("#carrera").value;
+  var fecha = document.querySelector("#fecha").value;
+  var nombre = document.querySelector("#nombre").value;
+  var apellido1 = document.querySelector("#apellido1").value;
+  var apellido2 = document.querySelector("#apellido2").value;
+  var fechan= document.querySelector("#fechan").value;
+  var lugarn = document.querySelector("#lugarn").value;
+  var curp1 = document.querySelector("#curp1").value;
+  var sexo = document.querySelector("#sexo").value;
+  var alergias = document.querySelector("#alergias").value;
+  var telefono1= document.querySelector("#telefono1").value;
+  var telefono2= document.querySelector("#telefono2").value;
+  var emaio1= document.querySelector("#email1").value;
+  var email2 = document.querySelector("#email2").value;
+  
+  
+  var calle = document.querySelector("#calle").value;
+  var numeroc = document.querySelector("#numeroc").value;
+  var colonia = document.querySelector("#colonia").value;
+  var localidad = document.querySelector("#localidad").value;
+  var cp= document.querySelector("#cp").value;
+  var municipio = document.querySelector("#municipio").value;
+  var estado = document.querySelector("#estado").value;
+  var nombree= document.querySelector("#nombree").value;
+var cct= document.querySelector("#cct").value;
+
+  var promedio= document.querySelector("#promedio").value;
+  var añoi = document.querySelector("#añoi").value;
+  var añoe= document.querySelector("#añoe").value;
+  
+  var nombret= document.querySelector("#nombret").value;
+var apellido3 = document.querySelector("#apellido3").value;
+var apellido4= document.querySelector("#apellido4").value;
+var curp2 = document.querySelector("#curp2").value;
+var ultimog = document.querySelector("#ultimog").value;
+
+
+var tabla=`<table border id="perro">
+		<tr>
+		<td>    <img src="images (1).png " alt="" width="100 " height="50">
+ </td> 
+ <td> _________</td>
+			<td>     <img src="images (4).jpeg " alt="" width="100 " height="50"></td> 
+	 </tr>
+	 	<tr>
+	 	<td>Foto ${foto} </td> 
+	  </tr>
+	<tr>
+	<td>Folio: ${folio} </td> 
+ </tr>
+ 	<tr>
+ 	<td>Aciertos: ${aciertos} </td> 
+  </tr>
+  	<tr>
+  	<td>Carrera: ${carrera} </td> 
+   </tr>
+ 	<tr>
+ 	<td>Fecha ${fecha} </td> 
+  </tr>
+	<tr>
+	<td>Nombre del alumno: ${nombre} </td> 
+ </tr>
+ <tr>
+ 	<td>Apellido paterno: ${apellido1} </td> 
+  </tr>
+	<tr>
+	<td>Apellido Materno: ${apellido2} </td> 
+ </tr>
+ 	<tr>
+ 	<td>Dia de nacimiemto: ${fechan} </td> 
+  </tr>
+ 	<tr>
+ 	<td>Lugar de Nacimiento: ${lugarn} </td> 
+  </tr>
+ 	<tr>
+ 	<td>Curp: ${curp1} </td> 
+  </tr>
+ 	<tr>
+ 	<td>Sexo: ${sexo} </td> 
+  </tr>
+ 	<tr>
+ 	<td>Alergias: ${alergias} </td> 
+  </tr>
+ 	<tr>
+ 	<td>Telefono del alumno: ${telefono1} </td> 
+  </tr>
+ 	<tr>
+ 	<td>Telefono del tutor: ${telefono2} </td> 
+  </tr>
+ 	<tr>
+ 	<td>Email alumno: ${email1} </td> 
+  </tr>
+ 	<tr>
+ 	<td>Email tutor: ${email2} </td> 
+  </tr>
+ 	<tr>
+ 	
+ 	
+ 	<td>Calle: ${calle} </td> 
+  </tr>
+ 	<tr>
+ 	<td>Numero: ${numeroc} </td> 
+  </tr>
+ 	<tr>
+ 	<td>Colonia: ${colonia} </td> 
+  </tr>
+  	<tr>
+  	<td>Localidad: ${localidad} </td> 
+   </tr>
+  	<tr>
+  	<td>Codigo postal: ${cp} </td> 
+   </tr>
+  	<tr>
+  	<td>Municipio: ${municipio} </td> 
+   </tr>
+ 	<tr>
+ 	<td>Estado: ${estado} </td> 
+  </tr>
+	<tr>
+	<td>Nombre de la escuela: ${nombre} </td> 
+ </tr>
+	<tr>
+	<td>CCT: ${cct} </td> 
+ </tr>
+	<tr>
+	<td>Promedio: ${promedio} </td> 
+ </tr>
+	<tr>
+	<td>Año de ingreso: ${añoi} </td> 
+ </tr>
+	<tr>
+	<td>Año de egreso: ${añoe} </td> 
+ </tr>
+ 
+ 
+ 	<tr>
+<td>Nombre del tutor: ${nombret} </td> 
+  </tr>
+  	<tr>
+  	<td>Apellido paterno del tutor: ${apellido3} </td> 
+   </tr>
+ 	<tr>
+ 	<td>Apellido materno del tutor:${apellido4} </td> 
+  </tr>
+ 	<tr>
+ 	<td>Curp del tutor:${curp2} </td> 
+  </tr>
+   	<tr>
+   	<td>Ultimo grado de eatudios:${ultimog} </td> 
+    </tr>
+`;
+imprimir.innerHTML=tabla;
+
+}
+
+
+</script>
+</body>
+
+</html>
